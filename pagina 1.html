@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seikasq</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .header img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .header .divider {
+            width: 60%;
+            height: 2px;
+            background: #ff7eb3;
+            margin: 20px auto;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #a0a0a0;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in;
+            display: none;
+        }
+
+        .menu h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff7eb3;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: #ff7eb3;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #ff7eb3;
+            background: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background: #ff7eb3;
+            color: white;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: white;
+            color: #ff7eb3;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #ff7eb3;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function showMenu() {
+            document.querySelector('.header').style.display = 'none';
+            document.querySelector('.menu').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.icegif.com/wp-content/uploads/2022/12/icegif-27.gif" alt="Animated Logo">
+        <h1>Seikasq</h1>
+        <div class="divider"></div>
+        <p>welcome to seikasq this is a squad via whatsapp that requests
+             members and is a friendly and helpful 
+             group since it has helped everyone.</p>
+        <button class="button" onclick="showMenu()">CLICK THIS</button>
+    </div>
+
+    <div class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="file:///C:/Users/abeli/OneDrive/Escritorio/Nueva%20carpeta/PAGINA%202.html">Whatsapp group</a></li>
+            <li><a href="file:///C:/Users/abeli/OneDrive/Escritorio/Nueva%20carpeta/pagina%203.html">Rules</a></li>
+            <li><a href="file:///C:/Users/abeli/OneDrive/Escritorio/Nueva%20carpeta/pagina%204.html">owners</a></li>
+        </ul>
+        <button class="back-button" onclick="location.reload()">Volver</button>
+    </div>
+</body>
+</html>
